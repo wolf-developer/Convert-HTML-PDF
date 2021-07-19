@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
+     
+    <title>allelica</title>
+    <link rel="stylesheet" type="text/css" href="own.css">
+<style type="text/css">
+    
+  
+  @font-face {
+    font-family: 'UniversLTPro-55Roman';
+    src: local('UniversLTPro-55Roman'), url('webfont/UniversLTPro-55Roman.otf') format('woff');
+    }
+   @font-face {
+    font-family: 'AvenirLTProRoman';
+    src: local('AvenirLTProRoman'), url('../../webfont/AvenirLTProRoman.woff') format('woff');
+    }
+    @font-face {
+    font-family: 'Avenir-Light';
+    src: local('Avenir-Light'), url('../../webfont/Avenir-Light.ttf') format('woff');
+    }
+    @font-face {
+    font-family: 'AvenirLTProBook';
+    src: local('AvenirLTProBook'), url('../../webfont/AvenirLTProBook.woff') format('woff');
+    }
+    @font-face {
+    font-family: 'arialmt';
+    src: local('arialmt'), url('../../webfont/arialmt.ttf') format('woff');
+    }
+    @font-face {
+    font-family: 'ARIALMTLIGHT';
+    src: local('ARIALMTLIGHT'), url('../../webfont/ARIALMTLIGHT.TTF') format('woff');
+    }
+    @font-face {
+    font-family: 'Arial Bold MT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Arial Bold MT'), url('../../webfont/Arial-BoldMT.otf') format('woff');
+    }
+
+.Last-Content-Section p{
+    margin:0;
+}
+.Footer-BG{
+    height: 208px;
+    position: relative;
+}
+.Footer-BG img{
+    height: 208px;
+    position: relative;
+    width: 100%;
+}
+    page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+    box-shadow: 0 0.2cm 0.2cm 0 rgb(0 0 0 / 77%);
+}
+
+.Last-Content-Section{
+    min-height: 619px;
+}
+page[size="A4"] {
+  width: 827px;
+/*  min-height: 1250px; */  
+}
+
+.page-11 .copyRight {bottom: 40px;position: relative;font-size: 8.5pt;color: white;font-family: 'AvenirLTProBook';padding-left: 43px;padding-top: 56rem;}
+
+
+.page-9 .copyRight p{
+    position: relative;font-size: 8.5pt;color: white;font-family: 'AvenirLTProBook';padding-left: 43px;padding-top: 20rem;padding-bottom:2rem;bottom: -9px;
+}
+.page-9 .copyRight span{
+   position: absolute;left: 94%;top: 95%;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+  page[size="A4"] {
+  width: 900px;
+  min-height: 1270px;   
+}
+page{
+   position: relative; 
+   page-break-after: always; 
+}
+
+  .content {
+            min-height: 759px;
+        }
+
+  .content2{
+    min-height: 779px;
+  }
+  .content3{
+    min-height: 779px;
+  }
+.content4{
+    min-height: 856px;  
+}
+.content5{
+min-height: 747px;
+}
+
+.Footer-BG {
+   height: 226px;
+}
+.Footer-BG img{
+   height: 226px;
+}
+.Footer-BG-Container{
+   padding-top: 0px !important;
+}
+
+.pages .page-11 .copyRight 
+{
+    bottom: 0px;
+    position: relative;
+    font-size: 8.5pt;
+    color: white;
+    font-family: 'AvenirLTProBook';
+    padding-left: 43px;
+    padding-top: 800px;
+
+}
+.pages .content2,.content3{
+      padding-bottom: 0px;
+}
+.pages .page-9 .copyRight p{
+    position: relative;font-size: 8.5pt;color: white;font-family: 'AvenirLTProBook';padding-left: 43px;padding-top: 20rem;padding-bottom:0rem;bottom: -35px;
+}
+.pages .page-9 .copyRight span{
+   position: absolute;left: 94%;top: 95%;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';
+}
+/*.pages .page-2 .Footer-BG{
+      height: 200px;
+}*/
+}
+</style>
+
+</head>
+<body>
+<div class="pages" id="divtoprint">
+
+    <page class="page-1 bg-Image" size="A4" style="background-image: url('images/bg.jpg');background-repeat: no-repeat;background-size: cover;">
+        <div class="Logo-Image" style="text-align: center;padding-left: 16rem;padding-top: 151px;">
+        <img src="images/small-logo1.png"/>
+       </div>
+        <div>
+            <p class="heading-title" style="text-align: center;font-size: 40pt;font-family: 'AvenirLTProRoman';color: white;padding-top: 4rem;padding-left: 2rem;">Polygenic Risk Score Report</p>
+        </div>
+         <div style="padding-left: 19rem;color: white;font-size: 16pt;font-family: 'AvenirLTProBook';padding-top: 9rem;">   
+                            <p>May 17, 2021</p>
+                            <p style="word-spacing: 30px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient: 697958f2</p>
+                            <p style="word-spacing: 64px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex: Female</p>             
+        </div>
+        <div><p class="copyRight" style="font-size: 8.5pt;color: white;font-family: 'ARIALMTLIGHT';padding-left: 43px;padding-top: 27rem;padding-bottom: 30px;">Allelica, Inc - All rights reserved</p></div>
+    </page>
+    <page class="page-2" size="A4">
+        <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style=" font-family: 'AvenirLTProRoman'; color: #403ACD; font-size: 9.0pt; padding-left: 37px; padding-right: 37px;margin-bottom: 0; ">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+
+     <!-- disease, polygenic risk,Absolute Risk cards -->
+     
+        <div class="content">
+        <div class="row" style="display: flex;">
+            <div class="col-md-4 Third-COLUMN" style="width: 36%;padding-left: 38px;">
+                <ul class="Third-1UL Third-1UL-left">
+                    <li class="Third-heading-H5">
+                        <h1>Disease</h1></li>
+                    <ul class="Third-2UL">
+                        <li class="Third-LIST">
+                            <div class="Div1">Alzheimer’s Disease</div>
+                            <div class="Div2">page 2</div>
+                        </li>
+                        <li class="Third-LIST">
+                            <div class="Div1">Breast Cancer</div>
+                            <div class="Div2">page 3</div>
+                        </li>
+                        <li class="Third-LIST">
+                            <div class="Div1">Coronary Artery Disease (CAD)</div>
+                            <div class="Div2">page 4</div>
+                        </li>
+                        <li class="Third-LIST">
+                            <div class="Div1">Early Menopause</div>
+                            <div class="Div2">page 5</div>
+                        </li>
+                        <li class="Third-LIST">
+                            <div class="Div1">Inflammatory Bowel Disease <br>(IBD)</div>
+                            <div class="Div2">page 6</div>
+                        </li>
+                        <li class="Third-LIST">
+                            <div class="Div1">Type 2 Diabetes</div>
+                            <div class="Div2">page 7</div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+          <div class="col-md-4 Third-COLUMN" style="width: 34%;">
+                <ul class="Third-1UL">
+                    <li class="Third-heading-H5">
+                        <h1>Polygenic Risk</h1></li>
+                    <ul class="Third-2UL">
+                        <li class="Input-Range-Top1">
+                            <ul>
+                                <li class="Input-Range-Inset" id="customRange1">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange1" class="form-label">Low</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange2">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange2" class="form-label">Average</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange3">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange3" class="form-label">High</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Input-Range-Top2">
+                            <ul>
+                                <li class="Input-Range-Inset" id="customRange1">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange1" class="form-label">Low</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange2">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange2" class="form-label">Average</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange3">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange3" class="form-label">High</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Input-Range-Top3">
+                            <ul>
+                                <li class="Input-Range-Inset" id="customRange1">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange1" class="form-label">Low</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange2">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange2" class="form-label">Average</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange3">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange3" class="form-label">High</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Input-Range-Top4">
+                            <ul>
+                                <li class="Input-Range-Inset" id="customRange1">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange1" class="form-label">Low</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange2">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange2" class="form-label">Average</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange3">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange3" class="form-label">High</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Input-Range-Top5">
+                            <ul>
+                                <li class="Input-Range-Inset" id="customRange1">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange1" class="form-label">Low</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange2">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange2" class="form-label">Average</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange3">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange3" class="form-label">High</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Input-Range-Top6">
+                            <ul>
+                                <li class="Input-Range-Inset" id="customRange1">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange1" class="form-label">Low</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange2">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange2" class="form-label">Average</label>
+                                </li>
+                                <li class="Input-Range-Inset" id="customRange3">
+                                    <input type="range" class="form-range" id="customRange">
+                                    <label for="customRange3" class="form-label">High</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-md-4 Third-COLUMN" style="width: 30%;padding-right: 38px;">
+                <ul class="Third-1UL Third-1UL-rigt">
+                    <li class="Third-heading-H5">
+                        <h1>Absolute Risk</h1></li>
+                    <ul class="Third-3UL">
+                        <li class="Third-LIST-3">
+                            <h4>27% by 90y</h4></li>
+                        <li class="Third-LIST-3">
+                            <h4>26% by 80y</h4></li>
+                        <li class="Third-LIST-3">
+                            <h4>3% by 80y</h4></li>
+                        <li class="Third-LIST-3">
+                            <h4>3%</h4></li>
+                        <li class="Third-LIST-3">
+                            <h4>0.4% by 80y</h4></li>
+                        <li class="Third-LIST-3">
+                            <h4>15% by 80y</h4></li>
+                    </ul>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row">
+                <div class="col-md-12 Polygenic-detail">
+                    <p>Polygenic Risk is defined as Low if it confers risk that is less than 0.5 fold compared to the average population. Polygenic Risk is High when it confers greater than 2 fold increased risk compared to the average population.</p>
+                </div>
+            </div>
+            </div>
+    <div class="container-fluid Footer-BG-Container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG">
+                    <img src="images/footer.jpg">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">1</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </page>
+    <!-- section chart 1 -->
+    <page class="page-3" size="A4">
+            <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style=" font-family: 'AvenirLTProRoman'; color: #403ACD; font-size: 9.0pt; padding-left: 37px; padding-right: 37px;margin-bottom: 0; ">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+         <div class="content2">
+
+        <div class="CHART-1">
+    <div>
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;font-family: 'Arial Bold MT';font-size: 17pt;color: #403ACD; ">
+                <h3 class="CHART-Heading" style="padding-top: 0;margin-top: 0;padding-bottom: 0;margin-bottom: 0;">Alzheimer’s Diseases (AD)</h3> </div>
+            <div class="row" style="padding-left: 36px;display: inline-flex;padding-right: 10px;">
+                <div class="col-md-6 CHART-DETAIL">
+                    <h6 class="CHART-DETAIL-HEADING" style="font-size: 18px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;/* font-family: 'Arial Bold MT'; */color: #403ACD;padding-bottom: 0;margin-bottom: 0;margin-top: 10px;">Preventative path</h6>
+                    <p style="font-size: 16px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;margin-top: 0;margin-right: 89px;text-align: justify;font-weight: 500;"> Several lifestyle factors are known to increase your risk of AD. These include smoking, drinking alcohol and not getting enough exercise. Maintaining a healthy lifestyle and keeping mentally active reduces lifetime risk of AD.
+                        <br>
+                        <br> <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">The genetic risk for AD is <span style="color: #403ACD;"> Average</span> (0.6 time
+                            the average population)</strong>
+                        <br>
+                        <br> A polygenic risk score (PRS) for AD was applied comprising 136,337 genome-wide variants, including some in and around APOE, a gene that contains polymorphisms that have been associated with increased risk of AD. The PRS was calculated from genetic data and compared to a reference distribution to find the percentile of this distribution that the PRS falls into.
+                        <br>
+                        <br> The chart shows how the risk for someone with a similar PRS for AD is projected to increase with age in comparison to individuals with an average PRS.
+                        <br>
+                        <br> This means that due to the genetic background, risk <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">increases less than</strong>  for the average population. </p>
+                </div>
+                <div class="col-md-6 Ours-CHART">
+                   <div class="row pb-4"> 
+                            <div class="col-md-12">
+                            <img src="images/Graph.png" style="width: 100%;">                     
+                            </div>
+                        </div>
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-6 LIST-COLUMNS" style="border: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER">
+                                    <h5 style=" font-size: 10pt;font-family: 'Arial Bold MT';text-align: center; margin-top: 0;margin-bottom: 0;">Polygenic Risk Score (percentile)</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">6</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 LIST-COLUMNS" style="border-right: 1px solid #8080804a;border-bottom: 1px solid #8080804a;border-top: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER pt-3" >
+                                    <h5 style="font-size: 12pt;font-family: 'Arial Bold MT';text-align: center;padding-top: 6px;margin-top: 0;margin-bottom: 7px;">Risk by 90y</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">26.9%</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div> <!-- content -->
+    <!-- footer -->
+    <div class="container-fluid Footer-BG-Container" style="padding-top: 0px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">2</p>
+                        <div class="Fotter-POSITION-LINK" style="position: absolute;bottom: 122px;left: 192px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;font-size: 15px;font-weight: 500;">
+                        <p style="margin-bottom: 3px;">*More information on Alzheimer’s Disease can be found on the NIH website here:</p> <a href="#" style="color: #0099A9;"> https://www.nia.nih.gov/health/alzheimers-disease-fact-sheet</a> </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </page>
+
+    <!-- page 4 -->
+        <!-- section chart 1 -->
+    <page class="page-3" size="A4">
+           <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style=" font-family: 'AvenirLTProRoman'; color: #403ACD; font-size: 9.0pt; padding-left: 37px; padding-right: 37px;margin-bottom: 0; ">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+         <div class="content3">
+        <div class="CHART-1">
+    <div>
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;font-family: 'Arial Bold MT';font-size: 17pt;color: #403ACD; ">
+                <h3 class="CHART-Heading" style="padding-top: 0;margin-top: 0;padding-bottom: 0;margin-bottom: 0;">Alzheimer’s Diseases (AD)</h3> </div>
+            <div class="row" style="padding-left: 36px;display: inline-flex;padding-right: 10px;">
+                <div class="col-md-6 CHART-DETAIL">
+                    <h6 class="CHART-DETAIL-HEADING" style="font-size: 18px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;/* font-family: 'Arial Bold MT'; */color: #403ACD;padding-bottom: 0;margin-bottom: 0;margin-top: 10px;">Preventative path</h6>
+                    <p style="font-size: 16px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;margin-top: 0;margin-right: 89px;text-align: justify;font-weight: 500;"> Several lifestyle factors are known to increase your risk of AD. These include smoking, drinking alcohol and not getting enough exercise. Maintaining a healthy lifestyle and keeping mentally active reduces lifetime risk of AD.
+                        <br>
+                        <br> <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">The genetic risk for AD is <span style="color: #403ACD;"> Average</span> (0.6 time
+                            the average population)</strong>
+                        <br>
+                        <br> A polygenic risk score (PRS) for AD was applied comprising 136,337 genome-wide variants, including some in and around APOE, a gene that contains polymorphisms that have been associated with increased risk of AD. The PRS was calculated from genetic data and compared to a reference distribution to find the percentile of this distribution that the PRS falls into.
+                        <br>
+                        <br> The chart shows how the risk for someone with a similar PRS for AD is projected to increase with age in comparison to individuals with an average PRS.
+                        <br>
+                        <br> This means that due to the genetic background, risk <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">increases less than</strong>  for the average population. </p>
+                </div>
+                <div class="col-md-6 Ours-CHART">
+                   <div class="row pb-4"> 
+                            <div class="col-md-12">
+                            <img src="images/Graph.png" style="width: 100%;">                     
+                            </div>
+                        </div>
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-6 LIST-COLUMNS" style="border: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER">
+                                    <h5 style=" font-size: 10pt;font-family: 'Arial Bold MT';text-align: center; margin-top: 0;margin-bottom: 0;">Polygenic Risk Score (percentile)</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">6</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 LIST-COLUMNS" style="border-right: 1px solid #8080804a;border-bottom: 1px solid #8080804a;border-top: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER pt-3" >
+                                    <h5 style="font-size: 12pt;font-family: 'Arial Bold MT';text-align: center;padding-top: 6px;margin-top: 0;margin-bottom: 7px;">Risk by 90y</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">26.9%</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div> <!-- content -->
+    <!-- footer -->
+    <div class="container-fluid Footer-BG-Container" style="padding-top: 0px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">3</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </page>
+    <page class="page-5" size="A4">
+        <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style=" font-family: 'AvenirLTProRoman'; color: #403ACD; font-size: 9.0pt; padding-left: 37px; padding-right: 37px;margin-bottom: 0; ">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+         <div class="content3">
+        <div class="CHART-1">
+    <div>
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;font-family: 'Arial Bold MT';font-size: 17pt;color: #403ACD; ">
+                <h3 class="CHART-Heading" style="padding-top: 0;margin-top: 0;padding-bottom: 0;margin-bottom: 0;">Alzheimer’s Diseases (AD)</h3> </div>
+            <div class="row" style="padding-left: 36px;display: inline-flex;padding-right: 10px;">
+                <div class="col-md-6 CHART-DETAIL">
+                    <h6 class="CHART-DETAIL-HEADING" style="font-size: 18px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;/* font-family: 'Arial Bold MT'; */color: #403ACD;padding-bottom: 0;margin-bottom: 0;margin-top: 10px;">Preventative path</h6>
+                    <p style="font-size: 16px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;margin-top: 0;margin-right: 89px;text-align: justify;font-weight: 500;"> Several lifestyle factors are known to increase your risk of AD. These include smoking, drinking alcohol and not getting enough exercise. Maintaining a healthy lifestyle and keeping mentally active reduces lifetime risk of AD.
+                        <br>
+                        <br> <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">The genetic risk for AD is <span style="color: #403ACD;"> Average</span> (0.6 time
+                            the average population)</strong>
+                        <br>
+                        <br> A polygenic risk score (PRS) for AD was applied comprising 136,337 genome-wide variants, including some in and around APOE, a gene that contains polymorphisms that have been associated with increased risk of AD. The PRS was calculated from genetic data and compared to a reference distribution to find the percentile of this distribution that the PRS falls into.
+                        <br>
+                        <br> The chart shows how the risk for someone with a similar PRS for AD is projected to increase with age in comparison to individuals with an average PRS.
+                        <br>
+                        <br> This means that due to the genetic background, risk <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">increases less than</strong>  for the average population. </p>
+                </div>
+                <div class="col-md-6 Ours-CHART">
+                   <div class="row pb-4"> 
+                            <div class="col-md-12">
+                            <img src="images/Graph.png" style="width: 100%;">                     
+                            </div>
+                        </div>
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-6 LIST-COLUMNS" style="border: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER">
+                                    <h5 style=" font-size: 10pt;font-family: 'Arial Bold MT';text-align: center; margin-top: 0;margin-bottom: 0;">Polygenic Risk Score (percentile)</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">6</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 LIST-COLUMNS" style="border-right: 1px solid #8080804a;border-bottom: 1px solid #8080804a;border-top: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER pt-3" >
+                                    <h5 style="font-size: 12pt;font-family: 'Arial Bold MT';text-align: center;padding-top: 6px;margin-top: 0;margin-bottom: 7px;">Risk by 90y</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">26.9%</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>  <!-- content -->
+    <!-- footer -->
+    <div class="container-fluid Footer-BG-Container" style="padding-top: 0px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">4</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </page>
+    <page class="page-6" size="A4">
+        <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style=" font-family: 'AvenirLTProRoman'; color: #403ACD; font-size: 9.0pt; padding-left: 37px; padding-right: 37px;margin-bottom: 0; ">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+          <div class="content3">
+        <div class="CHART-1">
+    <div>
+        <div class="row">
+           <div class="col-md-12" style="text-align: center;font-family: 'Arial Bold MT';font-size: 17pt;color: #403ACD; ">
+                <h3 class="CHART-Heading" style="padding-top: 0;margin-top: 0;padding-bottom: 0;margin-bottom: 0;">Alzheimer’s Diseases (AD)</h3> </div>
+            <div class="row" style="padding-left: 36px;display: inline-flex;padding-right: 10px;">
+                <div class="col-md-6 CHART-DETAIL">
+                    <h6 class="CHART-DETAIL-HEADING" style="font-size: 18px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;/* font-family: 'Arial Bold MT'; */color: #403ACD;padding-bottom: 0;margin-bottom: 0;margin-top: 10px;">Preventative path</h6>
+                    <p style="font-size: 16px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;margin-top: 0;margin-right: 89px;text-align: justify;font-weight: 500;"> Several lifestyle factors are known to increase your risk of AD. These include smoking, drinking alcohol and not getting enough exercise. Maintaining a healthy lifestyle and keeping mentally active reduces lifetime risk of AD.
+                        <br>
+                        <br> <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">The genetic risk for AD is <span style="color: #403ACD;"> Average</span> (0.6 time
+                            the average population)</strong>
+                        <br>
+                        <br> A polygenic risk score (PRS) for AD was applied comprising 136,337 genome-wide variants, including some in and around APOE, a gene that contains polymorphisms that have been associated with increased risk of AD. The PRS was calculated from genetic data and compared to a reference distribution to find the percentile of this distribution that the PRS falls into.
+                        <br>
+                        <br> The chart shows how the risk for someone with a similar PRS for AD is projected to increase with age in comparison to individuals with an average PRS.
+                        <br>
+                        <br> This means that due to the genetic background, risk <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">increases less than</strong>  for the average population. </p>
+                </div>
+                <div class="col-md-6 Ours-CHART">
+                   <div class="row pb-4"> 
+                            <div class="col-md-12">
+                            <img src="images/Graph.png" style="width: 100%;">                     
+                            </div>
+                        </div>
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-6 LIST-COLUMNS" style="border: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER">
+                                    <h5 style=" font-size: 10pt;font-family: 'Arial Bold MT';text-align: center; margin-top: 0;margin-bottom: 0;">Polygenic Risk Score (percentile)</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">6</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 LIST-COLUMNS" style="border-right: 1px solid #8080804a;border-bottom: 1px solid #8080804a;border-top: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER pt-3" >
+                                    <h5 style="font-size: 12pt;font-family: 'Arial Bold MT';text-align: center;padding-top: 6px;margin-top: 0;margin-bottom: 7px;">Risk by 90y</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">26.9%</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div> <!-- content -->
+    <!-- footer -->
+    <div class="container-fluid Footer-BG-Container" style="padding-top: 0px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">5</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </page>
+    <page class="page-7" size="A4">
+        <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style=" font-family: 'AvenirLTProRoman'; color: #403ACD; font-size: 9.0pt; padding-left: 37px; padding-right: 37px;margin-bottom: 0; ">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+          <div class="content3">
+        <div class="CHART-1">
+    <div>
+        <div class="row">
+           <div class="col-md-12" style="text-align: center;font-family: 'Arial Bold MT';font-size: 17pt;color: #403ACD; ">
+                <h3 class="CHART-Heading" style="padding-top: 0;margin-top: 0;padding-bottom: 0;margin-bottom: 0;">Alzheimer’s Diseases (AD)</h3> </div>
+            <div class="row" style="padding-left: 36px;display: inline-flex;padding-right: 10px;">
+                <div class="col-md-6 CHART-DETAIL">
+                    <h6 class="CHART-DETAIL-HEADING" style="font-size: 18px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;/* font-family: 'Arial Bold MT'; */color: #403ACD;padding-bottom: 0;margin-bottom: 0;margin-top: 10px;">Preventative path</h6>
+                    <p style="font-size: 16px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;margin-top: 0;margin-right: 89px;text-align: justify;font-weight: 500;"> Several lifestyle factors are known to increase your risk of AD. These include smoking, drinking alcohol and not getting enough exercise. Maintaining a healthy lifestyle and keeping mentally active reduces lifetime risk of AD.
+                        <br>
+                        <br> <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">The genetic risk for AD is <span style="color: #403ACD;"> Average</span> (0.6 time
+                            the average population)</strong>
+                        <br>
+                        <br> A polygenic risk score (PRS) for AD was applied comprising 136,337 genome-wide variants, including some in and around APOE, a gene that contains polymorphisms that have been associated with increased risk of AD. The PRS was calculated from genetic data and compared to a reference distribution to find the percentile of this distribution that the PRS falls into.
+                        <br>
+                        <br> The chart shows how the risk for someone with a similar PRS for AD is projected to increase with age in comparison to individuals with an average PRS.
+                        <br>
+                        <br> This means that due to the genetic background, risk <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">increases less than</strong>  for the average population. </p>
+                </div>
+                <div class="col-md-6 Ours-CHART">
+                   <div class="row pb-4"> 
+                            <div class="col-md-12">
+                            <img src="images/Graph.png" style="width: 100%;">                     
+                            </div>
+                        </div>
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-6 LIST-COLUMNS" style="border: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER">
+                                    <h5 style=" font-size: 10pt;font-family: 'Arial Bold MT';text-align: center; margin-top: 0;margin-bottom: 0;">Polygenic Risk Score (percentile)</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">6</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 LIST-COLUMNS" style="border-right: 1px solid #8080804a;border-bottom: 1px solid #8080804a;border-top: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER pt-3" >
+                                    <h5 style="font-size: 12pt;font-family: 'Arial Bold MT';text-align: center;padding-top: 6px;margin-top: 0;margin-bottom: 7px;">Risk by 90y</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">26.9%</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div> <!-- content -->
+    <!-- footer -->
+    <div class="container-fluid Footer-BG-Container" style="padding-top: 0px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">6</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </page>
+
+    <page class="page-8" size="A4">
+       <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style=" font-family: 'AvenirLTProRoman'; color: #403ACD; font-size: 9.0pt; padding-left: 37px; padding-right: 37px;margin-bottom: 0; ">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+          <div class="content3">
+        <div class="CHART-1">
+    <div>
+        <div class="row">
+           <div class="col-md-12" style="text-align: center;font-family: 'Arial Bold MT';font-size: 17pt;color: #403ACD; ">
+                <h3 class="CHART-Heading" style="padding-top: 0;margin-top: 0;padding-bottom: 0;margin-bottom: 0;">Alzheimer’s Diseases (AD)</h3> </div>
+            <div class="row" style="padding-left: 36px;display: inline-flex;padding-right: 10px;">
+                <div class="col-md-6 CHART-DETAIL">
+                    <h6 class="CHART-DETAIL-HEADING" style="font-size: 18px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;/* font-family: 'Arial Bold MT'; */color: #403ACD;padding-bottom: 0;margin-bottom: 0;margin-top: 10px;">Preventative path</h6>
+                    <p style="font-size: 16px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;margin-top: 0;margin-right: 89px;text-align: justify;font-weight: 500;"> Several lifestyle factors are known to increase your risk of AD. These include smoking, drinking alcohol and not getting enough exercise. Maintaining a healthy lifestyle and keeping mentally active reduces lifetime risk of AD.
+                        <br>
+                        <br> <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">The genetic risk for AD is <span style="color: #403ACD;"> Average</span> (0.6 time
+                            the average population)</strong>
+                        <br>
+                        <br> A polygenic risk score (PRS) for AD was applied comprising 136,337 genome-wide variants, including some in and around APOE, a gene that contains polymorphisms that have been associated with increased risk of AD. The PRS was calculated from genetic data and compared to a reference distribution to find the percentile of this distribution that the PRS falls into.
+                        <br>
+                        <br> The chart shows how the risk for someone with a similar PRS for AD is projected to increase with age in comparison to individuals with an average PRS.
+                        <br>
+                        <br> This means that due to the genetic background, risk <strong style="font-size: 19px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;">increases less than</strong>  for the average population. </p>
+                </div>
+                <div class="col-md-6 Ours-CHART">
+                   <div class="row pb-4"> 
+                            <div class="col-md-12">
+                            <img src="images/Graph.png" style="width: 100%;">                     
+                            </div>
+                        </div>
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-6 LIST-COLUMNS" style="border: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER">
+                                    <h5 style=" font-size: 10pt;font-family: 'Arial Bold MT';text-align: center; margin-top: 0;margin-bottom: 0;">Polygenic Risk Score (percentile)</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">6</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 LIST-COLUMNS" style="border-right: 1px solid #8080804a;border-bottom: 1px solid #8080804a;border-top: 1px solid #8080804a;width: 50%;">
+                            <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;background: #F3F3F3;border-bottom: 1px solid #8080804a;">
+                                <li class="LIST-heading LIST-HEADER pt-3" >
+                                    <h5 style="font-size: 12pt;font-family: 'Arial Bold MT';text-align: center;padding-top: 6px;margin-top: 0;margin-bottom: 7px;">Risk by 90y</h5>
+                                </li></ul>
+                                <ul style="text-decoration: none;list-style-type: none; padding-left: 16px;padding-right: 16px;padding-top: 5px;padding-bottom: 5px;margin:0;">
+                                <li class="LIST-heading">
+                                    <h6 style="padding: 0;margin: 0;font-size: 16pt;font-family:'ARIALMTLIGHT';text-align: center;">26.9%</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>    <!-- content -->
+    <!-- footer -->
+    <div class="container-fluid Footer-BG-Container" style="padding-top: 0px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">7</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </page>
+<page class="page-9" size="A4" style="position: relative;background-image: url('images/bg2.jpg');background-repeat: no-repeat;background-size: cover;">
+<div>
+         <div class="heading-title" style="text-align: left;font-size: 35pt;font-family: 'AvenirLTProRoman';color: white;padding-top: 16rem;padding-left: 15rem;">
+            
+            <hr style="margin-left: 144px;width: 69%;border: 1px solid white;">
+            <p style="padding-left: 144px;">PCA and Ancestry</p></div>
+        </div>
+         <div >   
+                            <p style="padding-left: 24rem;color: white;font-size: 24px;font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;padding-top: 2rem;padding-right: 119px;font-weight: 300;line-height: 30px;">We assessed ancestry using principal
+            components analysis (PCA) and iAdmix.
+            Your genome was compared to a set of 26
+            global populations to provide an estimate of
+            the components of their genetic ancestry.
+            We use this ancestry inference to adjust an
+            individual’s PRS score to account for their
+            ancestry. Ancestry specific PRS distributions
+            are built using populations with a range of
+            ancestries and then used to adjust your
+            score.
+        </p>             
+        </div>
+        <div class="copyRight"><p >Allelica, Inc - All rights reserved</p> <span>8</span>
+        </div>
+       
+</page>
+<page class="page-10" size="A4">
+<header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 35px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+                <p style="font-family: 'AvenirLTProRoman';padding-bottom: 0rem;color: #403ACD;font-size: 9.0pt;padding-left: 37px;padding-right: 37px;margin-bottom: 0;">RECEIVING HEALTHCARE PROVIDER</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 37px; padding-right: 37px; ">Tempus</span>
+            </div>
+                <div style="padding-left: 65px;">   
+                <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 0px;padding-right: 37px;padding-top: 167px;margin-bottom: 0;">DATA TYPE</p>
+                <span style=" font-family: 'AvenirLTProRoman'; color: black; font-size: 9.0pt; padding-left: 0; padding-right: 37px; ">SNP Array</span>
+                </div>
+            <div style="padding-left: 91px;">
+            <div style="color: black;font-size: 9.0pt;padding-top: 21px;font-family: 'AvenirLTProBook';padding-left: 113px;">   
+                            <p style=" padding-top: 12px;font-family: 'AvenirLTProBook';font-size: 9.0pt;padding-bottom: 15px;">May 17, 2021</p>
+                            <p style="word-spacing: 12px;padding-bottom: 0px;margin-bottom: 0;margin-top: 0;">Patient:<span style=" color: #656566; "> 697958f2</span></p>
+                            <p style="word-spacing: 31px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Sex:<span style=" color: #656566; "> Female</span></p>             
+           </div>
+            <p style="font-family: 'AvenirLTProRoman';color: #403ACD;font-size: 9.0pt;padding-left: 97px;padding-right: 37px;padding-top: 52px;margin-bottom: 0;">PATIENT</p>
+            <span style="font-family: 'AvenirLTProRoman';font-size: 9.0pt;padding-left: 98px;padding-bottom: 0px; margin-bottom: 0;margin-top: 0;">Patient ID: <span style=" color: #656566; padding-left: 2px;"> 697958f2</span></span>
+            </div>
+        </header>
+        <hr style="width: 93%;border: 1px solid #E9E9E9;">
+         <div class="content5">
+        <div>
+            <img src="images/Graph.png" style="width: 90%;padding-left: 32px;"> 
+            <h1 style="font-size: 15pt;font-family: 'Arial Bold MT';padding-left: 110px;">Ancestry: 89% European 7% South Asian 4% Admixed American</h1>
+            <h5 style="padding-left: 110px;font-family: 'ARIALMTLIGHT';font-size: 14pt;color: black;margin-top: 20px;">Your position (red cross) in the global PCA on the right provides a visual assessment of their
+                genome-wide ancestry. Each point represents a reference individual of known ancestry and
+                the sample is located near to those with similar ancestry. </h5>
+        </div>
+    </div>  <!-- content -->
+         <!-- footer -->
+    <div class="container-fluid Footer-BG-Container" style="padding-top: 30px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;right: 36px;bottom: -36px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">9</p>
+                        <div class="Fotter-POSITION-LINK" style="position: absolute;bottom: 133px;left: 112px;font-family: 'AvenirLTProBook';font-size: 20px;font-weight: 500;">
+                        <h5 style="margin-bottom: 0;">The full list of reference populations used is available at:</h5> <a href="#" style="color: #0099A9;"> https://www.nia.nih.gov/health/alzheimers-disease-fact-sheet</a><h5 style="margin-top: 22px;">*iAdmix result</h5> </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</page>
+<page class="page-11" size="A4" style="position: relative;background-image: url('images/bg2.jpg');background-repeat: no-repeat;background-size: cover;">
+<div>
+         <div class="heading-title" style="text-align: left;font-size: 35pt;font-family: 'AvenirLTProRoman';color: white;padding-top: 16rem;padding-left: 15rem;">
+            
+            <hr style="margin-left: 144px;width: 69%;border: 1px solid #E9E9E9;">
+            <p style="width: 69%;margin-left: 144px;">Technical Notes</p></div>
+        </div>
+         
+         <div>
+                <p class="copyRight">Allelica, Inc - All rights reserved</p>
+                <p style="position: absolute;left: 94%;top:92%;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">10</p>
+            </div>
+       
+</page>
+<page class="page-12" size="A4">
+<header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 0px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+            
+            </div>
+               
+        </header>
+         <hr style="width: 93%;border: 1px solid #E9E9E9;">
+          <div class="content4">
+         <div style="display: flex;">
+
+         <div style="width: 30%;">
+         <h3 style="font-family: 'AvenirLTProRoman'; font-size: 12pt;color: #4251D9; padding-left: 35px;padding-top: 20px;"> COMMON QUESTIONS</h3>  
+         </div>
+         <div style="width: 70%;padding-left: 156px; padding-top: 8px;">
+            <h6 style="font-size: 10pt;font-family: 'AvenirLTProRoman';color: #4251D9;margin-bottom: 0;">
+                What is PRS?
+            </h6>
+            <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 20px;    margin-top: 5px;">
+            A PRS is a number calculated from a person’s genetic data and is the sum of the
+            number of risk alleles associated with the disease of interest weighted by the
+            corresponding effect sizes (beta parameter) of those alleles on the disease.    
+            </p>
+            <h6 style="font-size: 10pt;font-family: 'AvenirLTProRoman';color: #4251D9;margin-bottom: 0;">
+                How PRS percentile is calculated?
+            </h6>
+            <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 20px;    margin-top: 5px;">
+            The PRS Percentile was computed using an ancestry adjusted Z-score based on
+the UK Biobank European samples distribution. 
+    
+            </p>
+            <h6 style="font-size: 10pt;font-family: 'AvenirLTProRoman';color: #4251D9;margin-bottom: 0;">
+                How Risk by Age 75 was calculated?
+            </h6>
+            <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 20px;    margin-top: 5px;">
+            Risk by Age 75 was computed using a COX regression model using PRS as
+independent variable and adjusted for the first 4 principal components of
+variation and sex (when relevant)
+
+            </p>
+<h6 style="font-size: 10pt;font-family: 'AvenirLTProRoman';color: #4251D9;margin-bottom: 0;">
+                What does it mean to have high lifetime genetic risk?
+            </h6>
+            <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 20px;    margin-top: 5px;">
+            If you calculate PRS on a population the scores will form a normal distribution
+with most people having scores in the middle of this distribution. A high PRS
+means that your score is higher than many in the population. This equates to
+your genes giving you a comparatively higher than average risk compared to
+the population. We define High lifetime genetic risk as a lifetime risk that is at
+least 3 times higher than the risk for the remainder of the population.
+Having a high lifetime genetic risk does not mean that the disease will definitely
+develop, as there are numerous additional lifestyle and physiological factors
+that contribute to modify the absolute risk. Additionally, the risk for many
+diseases varies substantially with age. 
+            </p>
+         </div>
+          
+         </div>
+         <div style="display: flex;">
+         <div style="width: 30%;">
+         <h3 style="font-family: 'AvenirLTProRoman'; font-size: 12pt;color: #4251D9; padding-left: 35px;padding-top: 20px;"> TEST LIMITATIONS</h3>  
+         </div>
+          <div style="width: 70%;padding-left: 156px; padding-top: 8px;">
+               <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 20px;margin-top: 26px;">
+            It is important to note that the results of the PRS analyses presented here are
+not diagnostic. The aim of these genetic and bioinformatic analyses is to
+provide additional information to clinicians about the risk of disease to a patient
+that is conferred by their genes. Depending on the PRS, the analyses take into
+account a range of between tens to millions common genetic variants that have
+been robustly associated with the disease of interest. However, there may still
+be additional, as yet unidentified, genetic variants involved in genetic risk.
+Furthermore, our PRS do not currently take into account rare variants in known
+disease-associated genes, such as LDLR and other genes that cause familial
+hypercholesterolemia in the case of CAD, or BRCA1 in the case of BC. It is likely
+that pathogenic rare variants will also contribute to an individual's genetic risk
+of developing a disease.
+            </p>
+          </div></div>
+     </div>  <!-- conent -->
+         <div class="container-fluid Footer-BG-Container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative;">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">11</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</page>
+<page class="page-13" size="A4">
+    <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 0px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+            
+            </div>
+               
+        </header>
+         <hr style="width: 93%;border: 1px solid #E9E9E9;">
+          <div class="content4">
+         <div style="display: flex;">
+
+         <div style="width: 30%;">
+         <h3 style="font-family: 'AvenirLTProRoman'; font-size: 12pt;color: #4251D9; padding-left: 35px;padding-top: 20px;"> SUPPORTING EVIDENCE</h3>   
+         </div>
+         <div style="width: 70%;padding-left: 20px; padding-top: 8px;">
+            
+            <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 50px;    margin-top: 29px;">
+            Large-scale prospective studies (i.e., sample sizes higher than 450.000
+            individuals) have demonstrated that individuals with high PRS for some diseases
+            display a significant higher risk of disease. This includes CAD (Khera et al 2018;
+            Sun et al 2021) 
+            </p>
+            
+         </div>
+         </div>
+         <div style="display: flex;">
+
+         <div style="width: 30%;">
+         <h3 style="font-family: 'AvenirLTProRoman'; font-size: 12pt;color: #4251D9; padding-left: 35px;padding-top: 20px;"> TECHNICAL DETAILS</h3> 
+         </div>
+         <div style="width: 70%;padding-left: 20px; padding-top: 8px;">
+            
+            <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 50px;    margin-top: 29px;">
+            Our analyses rely on genetic data that can come from a variety of sources
+including genotyping arrays, or either high- or low-coverage whole genome
+sequence data. We use software called Beagle V.5 to impute this genetic data
+into a common set of 50 million genetic variants. The reference panel used for
+imputation comprises 2,504 fully sequenced and haplotypically phased
+genomes from Phase 3 of 1000 Genomes project. Our PRS have been
+calculated based on panels of varying numbers of Single Nucleotide
+Polymorphisms (SNPs), details of which are provided in each PRS report. The
+sum of the number of risk alleles for each SNP is weighted by the
+corresponding effect size from the PRS panel. We select SNPs and associated
+effect sizes from the largest available Genome Wide Association Study (GWAS)
+available for a particular disease and use a suite of PRS methods to identify the
+best performing PRS. 
+    
+            </p>
+            
+         </div>
+         </div>
+         <div style="display: flex;">
+
+         <div style="width: 30%;">
+         <h3 style="font-family: 'AvenirLTProRoman'; font-size: 12pt;color: #4251D9; padding-left: 35px;padding-top: 20px;"> PRS PREDICTIVE
+PERFORMANCE
+</h3>   
+         </div>
+         <div style="width: 70%;padding-left: 20px; padding-top: 8px;">
+            
+            <p style="font-size: 10pt;font-family: 'AvenirLTProBook';padding-right: 50px;    margin-top: 29px;">
+            To provide insight on the predictive performance of our PRS we report the Area
+Under the Curve (AUC) of the Receiver Operating Characteristic (ROC). This
+tells us how good the PRS is at classifying known cases and controls for a
+disease, which we compute using a logistic regression model on scores
+computed from a population sample of 434,837 European-ancestry individuals
+from the UK Biobank. 
+            </p>
+            
+         </div>
+         </div>
+     </div>  <!-- content -->
+         <div class="container-fluid Footer-BG-Container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative;">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">12</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</page>
+<page class="page-14" size="A4">
+    <header class="Header" style="width: 100%;display: inline-flex;padding-bottom: 0px;">
+            <div>
+                <img src="images/logo2.png" style="padding: 37px;">
+            
+            </div>
+               
+        </header>
+<hr style="width: 93%;border: 1px solid #E9E9E9;">
+ <div class="Last-Content-Section content4">
+<div class="row Last-Content-Section" style="display: flex;padding-left: 41px;padding-right: 41px;">
+    <div class="col-md-3">
+        <h6 style="font-family: 'AvenirLTProRoman';font-size: 12pt;color: #4251D9;padding-left: 14px;padding-top: 0px;margin-top: 18px;margin-right: 89px;">REFERENCES </h6> </div>
+    <div class="col-md-9" style=" font-size: 9pt;font-family: 'AvenirLTProRoman';margin-top: 21px;">
+        <p> Aragam Krishna G., Dobbyn Amanda, Judy Renae, Chaffin Mark, Chaudhary Kumardeep, Hindy George, Cagan</p>
+        <p class="After-chart-Fifth-Paragraph"> Andrew, et al. 2020. ‘Limitations of Contemporary Guidelines for Managing Patients at High Genetic Risk of Coronary Artery Disease’. Journal of the American College of Cardiology 75 (22): 2769–80. https://doi.org/10.1016/j.jacc.2020.04.027.</p>
+        <p>Arnett Donna K., Blumenthal Roger S., Albert Michelle A., Buroker Andrew B., Goldberger Zachary D., Hahn Ellen</p>
+        <p class="After-chart-Fifth-Paragraph"> J., Himmelfarb Cheryl Dennison, et al. 2019. ‘2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines’. Circulation 140 (11): e596–646. https://doi.org/10.1161/CIR.0000000000000678.</p>
+        <p>Bolli Alessandro, Di Domenico Paolo, Pastorino Roberta, Busby George B., and Bottà Giordano. 2021. ‘Risk of</p>
+        <p class="After-chart-Fifth-Paragraph"> Coronary Artery Disease Conferred by Low-Density Lipoprotein Cholesterol Depends on Polygenic Background’. Circulation 143 (0). https://doi.org/10.1161/CIRCULATIONAHA.120.051843.</p>
+        <p>Bolli, Alessandro, Paolo Di Domenico, Roberta Pastorino, George Busby, and Giordano Bottà. 2020. ‘Polygenic Risk</p>
+        <p class="After-chart-Fifth-Paragraph"> Score Modifies Risk of Coronary Artery Disease Conferred by Low-Density Lipoprotein Cholesterol’. MedRxiv, March, 2020.03.01.20029454. https://doi.org/10.1101/2020.03.01.20029454.</p>
+        <p> Browning, Sharon R., and Brian L. Browning. 2007. ‘Rapid and Accurate Haplotype Phasing and Missing-Data</p>
+        <p class="After-chart-Fifth-Paragraph">Inference for Whole-Genome Association Studies By Use of Localized Haplotype Clustering’. The American Journal of Human Genetics 81 (5): 1084–97. https://doi.org/10.1086/521987.</p>
+        <p>Bycroft, Clare, Colin Freeman, Desislava Petkova, Gavin Band, Lloyd T. Elliott, Kevin Sharp, Allan Motyer, et al.</p>
+        <p class="After-chart-Fifth-Paragraph"> 2018. ‘The UK Biobank Resource with Deep Phenotyping and Genomic Data’. Nature 562 (7726): 203–9. https://doi.org/10.1038/s41586-018-0579-z. </p>
+        <p>Grundy, Scott M., Neil J. Stone, Alison L. Bailey, Craig Beam, Kim K. Birtcher, Roger S. Blumenthal, Lynne T. Braun, et al. </p>
+        <p class="After-chart-Fifth-Paragraph">2019. ‘2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol: Executive Summary: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines’. Journal of the American College of Cardiology 73 (24): 3168–3209. https://doi.org/10.1016/j.jacc.2018.11.002. </p>
+        <p>Inouye, Michael, Gad Abraham, Christopher P. Nelson, Angela M. Wood, Michael J. Sweeting, Frank Dudbridge,</p>
+        <p class="After-chart-Fifth-Paragraph">Florence Y. Lai, et al. 2018. ‘Genomic Risk Prediction of Coronary Artery Disease in 480,000 Adults: Implications for Primary Prevention’. Journal of the American College of Cardiology 72 (16): 1883–93. https://doi.org/10.1016/j.jacc.2018.07.079. </p>
+        <p> Khera, Amit V., Mark Chaffin, Krishna G. Aragam, Mary E. Haas, Carolina Roselli, Seung Hoan Choi, Pradeep</p>
+        <p class="After-chart-Fifth-Paragraph">Natarajan, et al. 2018. ‘Genome-Wide Polygenic Scores for Common Diseases Identify Individuals with Risk Equivalent to Monogenic Mutations’. Nature Genetics 50 (9): 1219–24. https://doi.org/10.1038/s41588-018-0183-z. </p>
+        <p>Nielsen, Jonas B., Rosa B. Thorolfsdottir, Lars G. Fritsche, Wei Zhou, Morten W. Skov, Sarah E. Graham, Todd J.</p>
+        <p class="After-chart-Fifth-Paragraph"> Herron, et al. 2018. ‘Biobank-Driven Genomic Discovery Yields New Insight into Atrial Fibrillation Biology’. Nature Genetics 50 (9): 1234–39. https://doi.org/10.1038/s41588-018-0171-3. </p>
+        <p>Nikpay, Majid, Anuj Goel, Hong-Hee Won, Leanne M. Hall, Christina Willenborg, Stavroula Kanoni, Danish</p>
+        <p class="After-chart-Fifth-Paragraph"> Saleheen, et al. 2015. ‘A Comprehensive 1,000 Genomes-Based Genome-Wide Association Meta-Analysis of Coronary Artery Disease’. Nature Genetics 47 (10): 1121–30. https://doi.org/10.1038/ng.3396. </p>
+        <p>Patterson, Nick, Alkes L. Price, and David Reich. 2006. ‘Population Structure and Eigenanalysis’. PLoS Genetics 2 </p>
+        <p class="After-chart-Fifth-Paragraph"> (12): e190. https://doi.org/10.1371/journal.pgen.0020190. </p>
+        <p> Privé, Florian, Julyan Arbel, and Bjarni J Vilhjálmsson. 2020. ‘LDpred2: Better, Faster, Stronger’. Bioinformatics, no.</p>
+        <p class="After-chart-Fifth-Paragraph"> btaa1029 (December). https://doi.org/10.1093/bioinformatics/btaa1029.</p>
+        <p> Privé, Florian, Bjarni J. Vilhjálmsson, Hugues Aschard, and Michael G. B. Blum. 2019. ‘Making the Most of</p>
+        <p class="After-chart-Fifth-Paragraph"> Clumping and Thresholding for Polygenic Scores’. American Journal of Human Genetics 105 (6): 1213–21. https://doi.org/10.1016/j.ajhg.2019.11.001. </p>
+        <p> Stone, Neil J., and Donald M. Lloyd-Jones. 2016. ‘The Pooled Cohort Equations for Predicting Risk of Myocardial</p>
+        <!-- <p class="After-chart-Fifth-Paragraph"> Infarction and Stroke: Validated in Representative Natural History Populations’. Mayo Clinic Proceedings 91 (6): 692–94. https://doi.org/10.1016/j.mayocp.2016.04.027. </p>
+        <p> Sun, Luanluan, Lisa Pennells, Stephen Kaptoge, Christopher P. Nelson, Scott C. Ritchie, Gad Abraham, Matthew</p>
+        <p class="After-chart-Fifth-Paragraph"> Arnold, et al. 2021. ‘Polygenic Risk Scores in Cardiovascular Risk Prediction: A Cohort Study and Modelling Analyses’. PLOS Medicine 18 (1): e1003498. https://doi.org/10.1371/journal.pmed.1003498. </p>
+        <p> Torkamani, Ali, Nathan E. Wineinger, and Eric J. Topol. 2018. ‘The Personal and Clinical Utility of Polygenic Risk</p>
+        <p class="After-chart-Fifth-Paragraph"> Scores’. Nature Reviews Genetics 19 (9): 581. https://doi.org/10.1038/s41576-018-0018-x. </p>
+        <p> Willer, Cristen J., Ellen M. Schmidt, Sebanti Sengupta, Gina M. Peloso, Stefan Gustafsson, Stavroula Kanoni,</p>
+        <p class="After-chart-Fifth-Paragraph"> Andrea Ganna, et al. 2013. ‘Discovery and Refinement of Loci Associated with Lipid Levels’. Nature Genetics 45 (11): 1274–83. https://doi.org/10.1038/ng.2797. </p> -->
+    </div>  </div>
+
+</div> <!-- content -->
+         <div class="container-fluid Footer-BG-Container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Footer-BG" style=" position: relative; ">
+                    <img src="images/footer.jpg" style="position: relative;width: 100%;">
+                    <div class="footer-copyright" style="position: relative;">
+                        <p style="position: absolute;bottom: 10px;left: 61px;color: white;font-size: 8.5pt;font-family: 'AvenirLTProBook';font: small-caption;">Allelica, Inc - All rights reserved</p>
+                        <p style="position: absolute;top: -97px;right: 36px;bottom: 0px;color: white;font-size: 31pt;font-family: 'AvenirLTProBook';">13</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</page>
+
+
+</div>
+
+
+
+ <script>
+        //downloading pdf
+        function getPDF() {
+            var element = document.getElementById('divtoprint');
+            var opt = {
+                filename: 'myfile.pdf',
+                image: {
+                    type: 'jpeg',
+                    quality: 0.98
+                },
+                html2canvas: {
+                    scale: 1
+                },
+                jsPDF: {
+                    unit: 'in',
+                    format: 'a4',
+                    orientation: 'portrait'
+                },
+                pagebreak: {
+                    mode: ['css']
+                },
+
+                // pagebreak: {
+                //     after: ['#after1', '#after2'],
+                //     avoid: 'img'
+                // }
+            };
+
+            // New Promise-based usage:
+            //html2pdf().set(opt).from(element).save();
+
+            // Old monolithic-style usage:
+            html2pdf(element, opt);
+
+        };
+        window.onload = function() {
+            getPDF();
+        };
+    </script>
+
+</body>
+</html>

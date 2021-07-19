@@ -60,7 +60,7 @@ li.Third-heading-H5 {
     background: #403ACD;
     color: #f2f2fd;
     text-align: center;
-    height: auto;
+    height: 38px;
     /* padding-top: 4px; */
     font-family: 'Arial Bold MT';
     font-weight: 600;
@@ -217,6 +217,19 @@ box-shadow: 0px 0px 10px #3db462;
     box-shadow: inset 0 0 1pt 1pt #403acd, 0 0 1pt 1pt #403acd;
 }
 
+.webkit-slider-thumb000 {
+  box-shadow: 0px 0px 10px #3db462;
+    border: 4px solid white;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 2px;
+      box-shadow: inset 0 0 1pt 1pt #403acd, 0 0 1pt 1pt #403acd;
+  }
+
 #customRange2 input[type="range"]:focus::-webkit-slider-runnable-track {
   background: none;
 }
@@ -279,7 +292,7 @@ box-shadow: 0px 0px 10px #3db462;
 .Input-Range-Top4,
 .Input-Range-Top5,
 .Input-Range-Top6 {
-      height: auto;
+      height: 62px;
       /* height: 60px; */
       padding-top: 4px;
       border-style: solid;
@@ -403,7 +416,7 @@ box-shadow: 0px 0px 10px #3db462;
  color: white;
  text-align: center;
  /* height: 60px; */
- height: auto;
+ height: 30px;
  align-items: center;
 }
 li.Third-LIST-3{
